@@ -1,4 +1,19 @@
 /*
+ZE-TASK:
+
+Shunday function yozing, uni  string parametri bolsin. String ichida takrorlangan harflarni olib tashlab qolganini qaytarsin
+MASALAN: removeDuplicate('stringg') return 'string'
+
+@MITASK
+*/
+function removeDuplicate(str: string): string {
+  const uniqueChars = new Set(str); // Har bir harfni unikal qilish uchun Set dan foydalanamiz
+  return Array.from(uniqueChars).join(""); // Setni stringga o'girib, natijani qaytaramiz
+}
+
+console.log(removeDuplicate("stringg")); // Natija: 'string'
+
+/*
 TASK ZD
 
 Shunday function yozing. Bu function o'ziga, parametr sifatida
@@ -16,7 +31,7 @@ yangilangan arrayni qaytarmoqda.
 
 
 */
-
+/*
 function changeNumberInArray(
   index: number,
   arr: number[],
@@ -32,7 +47,7 @@ function changeNumberInArray(
 // Misolni test qilish uchun:
 const result = changeNumberInArray(1, [1, 3, 7, 2], 2);
 console.log(result); // Natija: [1, 2, 7, 2]
-
+*/
 /*
 Selisy (°C) shkalasi bo'yicha raqam qabul qilib, uni
 Ferenhayt (°F) shkalisaga o'zgaritib beradigan function yozing.
