@@ -1,4 +1,25 @@
 /*
+TASK ZG
+
+String sifatida berilgan string parametrni
+snake case'ga o'tkazib beradigan function yozing.
+
+MASALAN: convertToSnakeCase('name should be a string')
+return 'name_should_be_a_string'
+
+
+*/
+function convertToSnakeCase(input: string): string {
+  return input
+    .toLowerCase() // Barcha harflarni kichik harfga o'zgartiradi
+    .replace(/\s+/g, "_"); // Bo'sh joylarni "_" bilan almashtiradi
+}
+
+// Masalan:
+const result = convertToSnakeCase("name should be a string");
+console.log(result); // 'name_should_be_a_string'
+
+/*
 ZE-TASK:
 
 Shunday function yozing, uni  string parametri bolsin. String ichida takrorlangan harflarni olib tashlab qolganini qaytarsin
@@ -6,13 +27,14 @@ MASALAN: removeDuplicate('stringg') return 'string'
 
 @MITASK
 */
+/*
 function removeDuplicate(str: string): string {
   const uniqueChars = new Set(str); // Har bir harfni unikal qilish uchun Set dan foydalanamiz
   return Array.from(uniqueChars).join(""); // Setni stringga o'girib, natijani qaytaramiz
 }
 
 console.log(removeDuplicate("stringg")); // Natija: 'string'
-
+*/
 /*
 TASK ZD
 
