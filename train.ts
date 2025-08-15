@@ -655,3 +655,15 @@ function getHighestIndex(arr) {
 // Misol:
 console.log(getHighestIndex([70, 80, 101, 1111, 999]));
 */
+
+/*
+PM2 COMMANDS
+ 
+pm2 ls
+pm2 start dist/server.js --name=BURAK
+pm2 start "npm run start:prod" --name=BURAK
+pm2 stop id
+pm2 delete id
+pm2 restart id
+
+*/
